@@ -15,7 +15,7 @@ public class ActionDTO implements Serializable{
 	private static final long serialVersionUID = 5533209505998310905L;
 
 	@Id
-	@Column("actionid")
+	@Column(name="actionid")
 	@GeneratedValue
 	private long actionid;
 	

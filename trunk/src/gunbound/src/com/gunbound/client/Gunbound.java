@@ -7,6 +7,7 @@ import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.VerticalPanel;
+import com.gunbound.client.manager.LoginManager;
 import com.gunbound.shared.dto.UserDTO;
 
 public class Gunbound implements EntryPoint {
@@ -16,7 +17,7 @@ public class Gunbound implements EntryPoint {
 	
 	public void onModuleLoad() {
 		mainPanel.setSize("100%", (Window.getClientHeight()-30)+"px");
-		mainPanel.add(new HTML("hola"));
+		//mainPanel.add(new HTML("webo puta"));
 		Window.addResizeHandler(new ResizeHandler() {
 			@Override
 			public void onResize(ResizeEvent event) {
@@ -25,6 +26,6 @@ public class Gunbound implements EntryPoint {
 		});
 		RootPanel.get("mainContent").add(mainPanel);
 		
-		//LoginManager.buildUI();
+		LoginManager.buildUI();
 	}
 }

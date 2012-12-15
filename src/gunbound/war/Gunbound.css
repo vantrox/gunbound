@@ -2,3 +2,15 @@ body{
 	padding:0;
 	margin:0;
 }
+
+.gwt-TextBox{
+	width: 151px;
+}
+
+.gwt-PasswordTextBox{
+	width: 151px;
+}
+
+.gwt-Button{
+	width: 64px;
+}

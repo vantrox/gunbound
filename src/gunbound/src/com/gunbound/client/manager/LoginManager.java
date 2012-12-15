@@ -52,6 +52,7 @@ public class LoginManager {
 
 		FlexCellFormatter formatter = table.getFlexCellFormatter();
 		formatter.setColSpan(0, 0, 2);
+		formatter.setColSpan(4,0,2);
 		formatter.setColSpan(6, 0, 2);
 		formatter.setHorizontalAlignment(0, 0, HasAlignment.ALIGN_CENTER);
 		formatter.setHorizontalAlignment(6, 0, HasAlignment.ALIGN_CENTER);

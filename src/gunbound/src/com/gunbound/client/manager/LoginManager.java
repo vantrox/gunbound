@@ -13,8 +13,7 @@ import com.google.gwt.user.client.ui.PasswordTextBox;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.gunbound.client.Gunbound;
-//import com.tresenraya.client.event.Ingresar;
-//import com.tresenraya.client.event.MostrarCuadroRegistro;
+import com.gunbound.client.event.Ingresar;
 
 public class LoginManager {
 	
@@ -23,12 +22,13 @@ public class LoginManager {
 	public static void buildUI() {
 		VerticalPanel panel = Gunbound.mainPanel;
 		FlexTable table = new FlexTable();
+		table.addStyleName("login-container");
 		FlowPanel flow = new FlowPanel();
 		
 		TextBox username = new TextBox();
 		PasswordTextBox password = new PasswordTextBox();
-		//Ingresar ingresar = new Ingresar(username, password);
-		//password.addKeyUpHandler(ingresar);
+		Ingresar ingresar = new Ingresar(username, password);
+		password.addKeyUpHandler(ingresar);
 		
 		Button login = new Button("Ok");
 		Button registrar = new Button("Register");

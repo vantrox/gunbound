@@ -22,9 +22,6 @@ public class UserDTO implements Serializable{
 	@Column(name="username")
 	private String username;
 	
-	@Column(name="password")
-	private String password;
-	
 	@Column(name="lastaccess")
 	private long lastaccess;
 	
@@ -35,7 +32,6 @@ public class UserDTO implements Serializable{
 	
 	public UserDTO(String username, String password, long lastaccess, int connected){
 		this.username = username;
-		this.password = password;
 		this.lastaccess = lastaccess;
 		this.connected = connected;
 	}
@@ -54,14 +50,6 @@ public class UserDTO implements Serializable{
 
 	public void setUsername(String username) {
 		this.username = username;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
 	}
 
 	public long getLastaccess() {

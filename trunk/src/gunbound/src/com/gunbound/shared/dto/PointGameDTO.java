@@ -25,7 +25,7 @@ public class PointGameDTO implements Serializable{
 	@Column(name="x")
 	private int x;
 	
-	@Column(name="x")
+	@Column(name="y")
 	private int y;
 	
 	public PointGameDTO(){}

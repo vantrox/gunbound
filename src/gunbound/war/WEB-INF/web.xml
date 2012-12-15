@@ -33,7 +33,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>springGwtRemoteServiceServlet</servlet-name>
- 	<url-pattern>/gunbound/jsonserv/*</url-pattern>
+ 	<url-pattern>/gunbound/serv/*</url-pattern>
   </servlet-mapping> 
   
   <!-- Default page to serve -->

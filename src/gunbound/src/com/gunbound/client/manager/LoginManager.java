@@ -14,6 +14,7 @@ import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.gunbound.client.Gunbound;
 import com.gunbound.client.event.Ingresar;
+import com.gunbound.client.event.MostrarCuadroRegistro;
 
 public class LoginManager {
 	
@@ -24,14 +25,14 @@ public class LoginManager {
 		FlexTable table = new FlexTable();
 		table.addStyleName("login-container");
 		FlowPanel flow = new FlowPanel();
-		
+		flow.addStyleName("dialogButtons");
 		TextBox username = new TextBox();
 		PasswordTextBox password = new PasswordTextBox();
 		Ingresar ingresar = new Ingresar(username, password);
 		password.addKeyUpHandler(ingresar);
 		
 		Button login = new Button("Ok");
-		Button registrar = new Button("Register");
+		Button registrar = new Button("Register", new MostrarCuadroRegistro());
 		
 		flow.add(login);
 		flow.add(registrar);

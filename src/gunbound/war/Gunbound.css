@@ -11,10 +11,10 @@ body{
 	width: 151px;
 }
 
-.gwt-Button{
-	width: 64px;
-}
-
 .login-container{
 	margin: 10px 15px;
+}
+
+.dialogButtons button{
+	width: 64px;
 }

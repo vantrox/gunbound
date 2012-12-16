@@ -14,3 +14,7 @@ body{
 .gwt-Button{
 	width: 64px;
 }
+
+.login-container{
+	margin: 10px 15px;
+}

@@ -6,5 +6,9 @@ import com.gunbound.shared.dto.UserDTO;
 
 @RemoteServiceRelativePath("serv/userService")
 public interface UserService extends RemoteService{
+	
 	UserDTO auth(String username, String password);
+	boolean checkUsername(String name);
+	String save(String usename, String password);
+	
 }

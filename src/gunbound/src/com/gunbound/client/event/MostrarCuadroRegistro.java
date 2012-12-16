@@ -26,10 +26,14 @@ public class MostrarCuadroRegistro implements ClickHandler {
 		TextBox username = new TextBox();
 		PasswordTextBox password = new PasswordTextBox();
 		PasswordTextBox repassword = new PasswordTextBox();
-		Button ok = new Button("Ok");
+		Button ok = new Button("Ok", new SaveUser(username, password, repassword));
 		Button cancel = new Button("Cancel", new Cerrar(dialog));
 		Image img1 = create("Name already used!");
 		Image img2 = create("Your passwords does not match.");
+		username.addKeyUpHandler(new CheckUsername(img1, username));
+		CheckPassword check = new CheckPassword(password, repassword, img2);
+		password.addKeyUpHandler(check);
+		repassword.addKeyUpHandler(check);
 		
 		FlowPanel flow = new FlowPanel();
 		flow.addStyleName("dialogButtons");
